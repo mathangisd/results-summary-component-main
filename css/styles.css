@@ -1,0 +1,194 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+*,
+::after,
+::before {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {font-size: 112.5%;} /*18px*/
+
+body {
+  background: var(--white);
+  font-family: var(--font), sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  color: var(--lightlavender);
+}
+
+
+p {margin-bottom: 1rem;}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: var(--font), sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+small, .text-small {font-size: 0.8rem;}
+
+
+:root {
+
+    /* primary colors*/
+
+    --lightred: hsl(0, 100%, 67%);
+    --orangeyellow: hsl(39, 100%, 56%);
+    --greenteal: hsl(166, 100%, 37%);
+    --cobaltblue: hsl(234, 85%, 45%);
+
+    /* neutral colors */
+
+    --white: hsl(0, 0%, 100%);
+    --paleblue: hsl(221, 100%, 96%);
+    --lightlavender: hsl(241, 100%, 89%);
+    --darkgreyblue: hsl(224, 30%, 27%);
+    
+    /* gradients background */
+    --lightslateblue: hsl(252, 100%, 67%);
+    --lightslateblue-1: hsla(252, 100%, 67%, 0.7);
+    --lightroyalblue: hsl(241, 81%, 54%);
+
+    /* gradients circle */
+    --violetblue: hsla(256, 72%, 46%, 1);
+    --violetblue-1: hsla(256, 72%, 46%, 0.1);
+    --persianblue: hsla(241, 72%, 46%, 0);
+
+    /* font */
+    --font: 'Hanken Grotesk', sans-serif;
+
+    --borderRadius: 2rem;
+    --transition: all 0.3s linear;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* 
+==============
+Card
+==============
+*/
+
+.card-container {
+    min-height: 100vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    margin-top: 5rem;
+}   
+
+.result-card {
+    background: linear-gradient(to top, var(--lightroyalblue) 50%, var(--lightslateblue));
+    text-align: center;
+    width: 350px;
+    max-width: 90vw;
+    /* position: relative; */
+    border-bottom-left-radius: var(--borderRadius);
+    border-bottom-right-radius: var(--borderRadius);
+
+}
+
+.result-card p {
+    margin-top: 1.25rem;
+}
+
+
+.score-container {
+    /* position: absolute; */
+    /* top:50%; */
+    /* left:50%; */
+    /* transform: translate(-50%, -50%); */
+    /* ****** */
+    background: linear-gradient(var(--violetblue), var(--violetblue-1));
+    width: 9rem;
+    height: 9rem;
+    margin: 0 auto;
+    /* ******** */
+    /* display: grid; */
+    /* place-items: center; */
+    /* *** */
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column; 
+    /* *** */
+    
+    /* justify-content: flex-end; */
+    /* background: red; */
+
+    border-radius: 50%;
+}
+
+.score-text {
+ margin-top: 2.5rem;
+}
+
+.score-text p {
+    margin-top: -3rem;
+}
+.score-footer {
+    margin-top: -1rem;
+}
+.score-footer h5 {
+    color: var(--white);
+    font-weight: 500;
+}
+.score-footer p {
+    padding: 2.5rem;
+    margin-top: -3rem;
+    font-size: 0.8rem;
+    color: var(--lightlavender);
+}
+.result-card h2 {
+    font-weight: 800;
+    color: var(--white);
+    /* background: red; */
+    font-size: 3.25rem;
+}
+
+.score-container h2 {
+    /* background: purple; */
+    padding-bottom: 2rem;
+    margin-top: -1rem;
+}
+.of-100 {
+    /* background: yellow; */
+    margin-top: -2.5rem;
+}
+
+.result-card p {
+    /* margin-top: -3rem; */
+}
+.summary-card {
+    background: var(--white);
+    text-align: center;
+}
+
+
+
+
