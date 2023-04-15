@@ -9,6 +9,40 @@
     box-sizing: border-box;
 }
 
+:root {
+
+    /* primary colors*/
+
+    --lightred: hsl(0, 100%, 67%);
+    --orangeyellow: hsl(39, 100%, 56%);
+    --greenteal: hsl(166, 100%, 37%);
+    --cobaltblue: hsl(234, 85%, 45%);
+
+    /* neutral colors */
+
+    --white: hsl(0, 0%, 100%);
+    --paleblue: hsl(221, 100%, 96%);
+    --lightlavender: hsl(241, 100%, 89%);
+    --lightlavender-1:hsla(241, 100%, 89%,0.8);
+    --darkgreyblue: hsl(224, 30%, 27%);
+    
+    /* gradients background */
+    --lightslateblue: hsl(252, 100%, 67%);
+    --lightslateblue-1: hsla(252, 100%, 67%, 0.7);
+    --lightroyalblue: hsl(241, 81%, 54%);
+
+    /* gradients circle */
+    --violetblue: hsla(256, 72%, 46%, 1);
+    --violetblue-1: hsla(256, 72%, 46%, 0.1);
+    --persianblue: hsla(241, 72%, 46%, 0);
+
+    /* font */
+    --font: 'Hanken Grotesk', sans-serif;
+
+    --borderRadius: 2rem;
+    --transition: all 0.3s linear;
+}
+
 html {font-size: 112.5%;} /*18px*/
 
 body {
@@ -16,7 +50,7 @@ body {
   font-family: var(--font), sans-serif;
   font-weight: 500;
   line-height: 1.75;
-  color: var(--lightlavender);
+  color: var(--lightlavender-1);
 }
 
 
@@ -45,38 +79,7 @@ h5 {font-size: 1.25rem;}
 small, .text-small {font-size: 0.8rem;}
 
 
-:root {
 
-    /* primary colors*/
-
-    --lightred: hsl(0, 100%, 67%);
-    --orangeyellow: hsl(39, 100%, 56%);
-    --greenteal: hsl(166, 100%, 37%);
-    --cobaltblue: hsl(234, 85%, 45%);
-
-    /* neutral colors */
-
-    --white: hsl(0, 0%, 100%);
-    --paleblue: hsl(221, 100%, 96%);
-    --lightlavender: hsl(241, 100%, 89%);
-    --darkgreyblue: hsl(224, 30%, 27%);
-    
-    /* gradients background */
-    --lightslateblue: hsl(252, 100%, 67%);
-    --lightslateblue-1: hsla(252, 100%, 67%, 0.7);
-    --lightroyalblue: hsl(241, 81%, 54%);
-
-    /* gradients circle */
-    --violetblue: hsla(256, 72%, 46%, 1);
-    --violetblue-1: hsla(256, 72%, 46%, 0.1);
-    --persianblue: hsla(241, 72%, 46%, 0);
-
-    /* font */
-    --font: 'Hanken Grotesk', sans-serif;
-
-    --borderRadius: 2rem;
-    --transition: all 0.3s linear;
-}
 
 
 .attribution {
@@ -100,22 +103,22 @@ Card
     display: grid;
     align-content: center;
     justify-content: center;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
 }   
 
 .result-card {
     background: linear-gradient(to top, var(--lightroyalblue) 50%, var(--lightslateblue));
     text-align: center;
-    width: 350px;
+    width: 375px;
     max-width: 90vw;
     /* position: relative; */
     border-bottom-left-radius: var(--borderRadius);
     border-bottom-right-radius: var(--borderRadius);
-
+    
 }
 
 .result-card p {
-    margin-top: 1.25rem;
+    margin-top: 0.85em;
 }
 
 
@@ -126,8 +129,8 @@ Card
     /* transform: translate(-50%, -50%); */
     /* ****** */
     background: linear-gradient(var(--violetblue), var(--violetblue-1));
-    width: 9rem;
-    height: 9rem;
+    width: 8rem;
+    height: 8rem;
     margin: 0 auto;
     /* ******** */
     /* display: grid; */
@@ -145,14 +148,14 @@ Card
 }
 
 .score-text {
- margin-top: 2.5rem;
+ margin-top: 2rem;
 }
 
 .score-text p {
-    margin-top: -3rem;
+    margin-top: -3.5rem;
 }
 .score-footer {
-    margin-top: -1rem;
+    margin-top: -2rem;
 }
 .score-footer h5 {
     color: var(--white);
@@ -160,9 +163,10 @@ Card
 }
 .score-footer p {
     padding: 2.5rem;
+    padding-bottom: 1rem;
     margin-top: -3rem;
-    font-size: 0.8rem;
-    color: var(--lightlavender);
+    font-size: 0.9rem;
+    color: var(--lightlavender-1);
 }
 .result-card h2 {
     font-weight: 800;
@@ -178,12 +182,9 @@ Card
 }
 .of-100 {
     /* background: yellow; */
-    margin-top: -2.5rem;
+    /* margin-top: -2.5rem; */
 }
 
-.result-card p {
-    /* margin-top: -3rem; */
-}
 .summary-card {
     background: var(--white);
     text-align: center;
