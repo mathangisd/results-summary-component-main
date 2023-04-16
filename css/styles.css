@@ -23,9 +23,10 @@
     --white: hsl(0, 0%, 100%);
     --paleblue: hsl(221, 100%, 96%);
     --lightlavender: hsl(241, 100%, 89%);
-    --lightlavender-1:hsla(241, 100%, 89%,0.8);
+    --lightlavender-1:hsla(241, 100%, 89%,0.6);
     --darkgreyblue: hsl(224, 30%, 27%);
-    
+    --darkgreyblue-1: hsla(224, 30%, 27%, 0.3);
+
     /* gradients background */
     --lightslateblue: hsl(252, 100%, 67%);
     --lightslateblue-1: hsla(252, 100%, 67%, 0.7);
@@ -36,10 +37,13 @@
     --violetblue-1: hsla(256, 72%, 46%, 0.1);
     --persianblue: hsla(241, 72%, 46%, 0);
 
+    /*  primary color variations */
+      --lightred-1: hsla(0, 100%, 67%,0.1);
     /* font */
     --font: 'Hanken Grotesk', sans-serif;
 
-    --borderRadius: 2rem;
+    --borderRadius: 0.75rem;
+    --borderRadius-large: 2rem;
     --transition: all 0.3s linear;
 }
 
@@ -112,8 +116,8 @@ Card
     width: 375px;
     max-width: 90vw;
     /* position: relative; */
-    border-bottom-left-radius: var(--borderRadius);
-    border-bottom-right-radius: var(--borderRadius);
+    border-bottom-left-radius: var(--borderRadius-large);
+    border-bottom-right-radius: var(--borderRadius-large);
     
 }
 
@@ -187,9 +191,60 @@ Card
 
 .summary-card {
     background: var(--white);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+.summary-card p {
+    color: var(--darkgreyblue);
+    font-weight: 700;
+    margin-top: 1rem;
+
 }
 
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+     background: var(--lightred-1);
+     padding: 1rem 0.5rem;
+     margin-bottom: 1rem;
+     border-radius: var(--borderRadius);
+     outline-style: solid;
+     outline-color: transparent;
+}
 
+.summary-item-details {
+    display: flex;
+    align-items: center;
+    
+}
 
+.summary-item-name {
+    text-transform: capitalize;
+    padding-left: 0.5rem;
+}
+.reaction {
 
+    color: var(--lightred);
+   
+}
+
+.actual-value {
+    color: var(--darkgreyblue);
+    font-weight: 800;
+}
+
+.out-of-hundred {
+    color: var(--darkgreyblue-1);
+    font-weight: 800;
+}
+
+.btn {
+    background: var(--darkgreyblue);
+    padding: 1rem;
+    color: var(--white);
+    border-radius: 2rem;
+    font-size: 1rem;
+
+}
