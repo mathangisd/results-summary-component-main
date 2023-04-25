@@ -278,3 +278,14 @@ Card
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
+
+.btn:hover {
+    background: var(--cobaltblue);
+    cursor: pointer;
+  }
+
+
+.btn:focus {
+    outline: 2px solid transparent;
+    background: var(--cobaltblue );
+}
