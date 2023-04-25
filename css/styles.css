@@ -14,9 +14,13 @@
     /* primary colors*/
 
     --lightred: hsl(0, 100%, 67%);
+    --lightred-1: hsla(0, 100%, 67%,0.1);
     --orangeyellow: hsl(39, 100%, 56%);
+    --orangeyellow-1: hsla(39, 100%, 56%, 0.1);
     --greenteal: hsl(166, 100%, 37%);
+    --greenteal-1: hsla(166, 100%, 37%, 0.1);
     --cobaltblue: hsl(234, 85%, 45%);
+    --cobaltblue-1: hsla(234, 85%, 45%, 0.1);
 
     /* neutral colors */
 
@@ -37,13 +41,14 @@
     --violetblue-1: hsla(256, 72%, 46%, 0.1);
     --persianblue: hsla(241, 72%, 46%, 0);
 
-    /*  primary color variations */
-      --lightred-1: hsla(0, 100%, 67%,0.1);
+
+ 
     /* font */
     --font: 'Hanken Grotesk', sans-serif;
 
     --borderRadius: 0.75rem;
-    --borderRadius-large: 2rem;
+    --borderRadius-medium: 2rem;
+    --borderRadius-large: 5rem;
     --transition: all 0.3s linear;
 }
 
@@ -116,8 +121,8 @@ Card
     width: 375px;
     max-width: 90vw;
     /* position: relative; */
-    border-bottom-left-radius: var(--borderRadius-large);
-    border-bottom-right-radius: var(--borderRadius-large);
+    border-bottom-left-radius: var(--borderRadius-medium);
+    border-bottom-right-radius: var(--borderRadius-medium);
     
 }
 
@@ -189,6 +194,7 @@ Card
     /* margin-top: -2.5rem; */
 }
 
+
 .summary-card {
     background: var(--white);
     display: flex;
@@ -202,12 +208,16 @@ Card
     margin-top: 1rem;
 
 }
+.summary-list {
+    width: 98%;
+    margin: 0 auto;
+}
 
 .summary-item {
     display: flex;
     justify-content: space-between;
      background: var(--lightred-1);
-     padding: 1rem 0.5rem;
+     padding: 0.75rem 1rem;
      margin-bottom: 1rem;
      border-radius: var(--borderRadius);
      outline-style: solid;
@@ -221,13 +231,32 @@ Card
 }
 
 .summary-item-name {
+
     text-transform: capitalize;
-    padding-left: 0.5rem;
+    padding-left: 0.75rem;
 }
+
 .reaction {
 
     color: var(--lightred);
-   
+    background: var(--lightred-1);
+}
+
+.memory {
+
+    color: var(--orangeyellow);
+    background: var(--orangeyellow-1);
+}
+
+.verbal {
+    color: var(--greenteal);
+    background: var(--greenteal-1);
+    
+}
+
+.visual {
+    color: var(--cobaltblue);
+    background: var(--cobaltblue-1);
 }
 
 .actual-value {
@@ -244,7 +273,7 @@ Card
     background: var(--darkgreyblue);
     padding: 1rem;
     color: var(--white);
-    border-radius: 2rem;
+    border-radius: var(--borderRadius-large);
     font-size: 1rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
