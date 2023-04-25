@@ -26,6 +26,7 @@
 
     --white: hsl(0, 0%, 100%);
     --paleblue: hsl(221, 100%, 96%);
+     --paleblue-1: hsla(221, 100%, 96%, 0.7);
     --lightlavender: hsl(241, 100%, 89%);
     --lightlavender-1:hsla(241, 100%, 89%,0.6);
     --darkgreyblue: hsl(224, 30%, 27%);
@@ -50,9 +51,12 @@
     --borderRadius-medium: 2rem;
     --borderRadius-large: 5rem;
     --transition: all 0.3s linear;
+
+     --light-shadow: 0 0 15px hsla(241, 100%, 89%, 0.5);
 }
 
 html {font-size: 112.5%;} /*18px*/
+
 
 body {
   background: var(--white);
@@ -127,7 +131,9 @@ Card
 }
 
 .result-card p {
-    margin-top: 0.85em;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    color: var(--lightlavender);
 }
 
 
@@ -138,8 +144,8 @@ Card
     /* transform: translate(-50%, -50%); */
     /* ****** */
     background: linear-gradient(var(--violetblue), var(--violetblue-1));
-    width: 8rem;
-    height: 8rem;
+    width: 10rem;
+    height: 10rem;
     margin: 0 auto;
     /* ******** */
     /* display: grid; */
@@ -157,7 +163,7 @@ Card
 }
 
 .score-text {
- margin-top: 2rem;
+ margin-top: 3rem;
 }
 
 .score-text p {
@@ -166,16 +172,17 @@ Card
 .score-footer {
     margin-top: -2rem;
 }
-.score-footer h5 {
+.score-footer h4 {
     color: var(--white);
     font-weight: 500;
 }
 .score-footer p {
-    padding: 2.5rem;
+    padding: 4rem;
     padding-bottom: 1rem;
-    margin-top: -3rem;
+    margin-top: -5rem;
     font-size: 0.9rem;
-    color: var(--lightlavender-1);
+    color: var(--paleblue-1);
+    line-height: 1.5;
 }
 .result-card h2 {
     font-weight: 800;
@@ -183,6 +190,7 @@ Card
     /* background: red; */
     font-size: 3.25rem;
 }
+
 
 .score-container h2 {
     /* background: purple; */
@@ -205,7 +213,8 @@ Card
 .summary-card p {
     color: var(--darkgreyblue);
     font-weight: 700;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    font-size: 1.25rem;
 
 }
 .summary-list {
@@ -277,6 +286,7 @@ Card
     font-size: 1rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    transition: var(--transition);
 }
 
 .btn:hover {
@@ -288,4 +298,40 @@ Card
 .btn:focus {
     outline: 2px solid transparent;
     background: var(--cobaltblue );
+}
+
+/* 
+===================================
+Media Queries
+====================================
+*/
+
+@media screen and (min-width: 1000px) {
+
+    .card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+    }
+
+    .result-card {
+        height: 500px;
+        width: 375px;
+        /* padding: 2rem; */
+        display: grid;
+        justify-self: end;
+        border-radius: var(--borderRadius-medium);
+        z-index: 1;
+    }
+
+    .summary-card {
+       
+         width: 400px;
+        margin-left: -3rem;
+        padding-left: 5rem;
+        padding-right: 2rem;
+        box-shadow: var(--light-shadow);
+        border-top-right-radius: var(--borderRadius-medium);
+        border-bottom-right-radius: var(--borderRadius-medium);
+    }
 }
