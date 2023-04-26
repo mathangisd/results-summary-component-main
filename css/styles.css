@@ -12,7 +12,6 @@
 :root {
 
     /* primary colors*/
-
     --lightred: hsl(0, 100%, 67%);
     --lightred-1: hsla(0, 100%, 67%,0.1);
     --orangeyellow: hsl(39, 100%, 56%);
@@ -23,18 +22,17 @@
     --cobaltblue-1: hsla(234, 85%, 45%, 0.1);
 
     /* neutral colors */
-
     --white: hsl(0, 0%, 100%);
     --paleblue: hsl(221, 100%, 96%);
-     --paleblue-1: hsla(221, 100%, 96%, 0.7);
+    --paleblue-7: hsla(221, 100%, 96%, 0.7);
     --lightlavender: hsl(241, 100%, 89%);
-    --lightlavender-1:hsla(241, 100%, 89%,0.6);
+    --lightlavender-6:hsla(241, 100%, 89%,0.6);
     --darkgreyblue: hsl(224, 30%, 27%);
-    --darkgreyblue-1: hsla(224, 30%, 27%, 0.3);
+    --darkgreyblue-3: hsla(224, 30%, 27%, 0.3);
 
     /* gradients background */
     --lightslateblue: hsl(252, 100%, 67%);
-    --lightslateblue-1: hsla(252, 100%, 67%, 0.7);
+    --lightslateblue-7: hsla(252, 100%, 67%, 0.7);
     --lightroyalblue: hsl(241, 81%, 54%);
 
     /* gradients circle */
@@ -42,58 +40,61 @@
     --violetblue-1: hsla(256, 72%, 46%, 0.1);
     --persianblue: hsla(241, 72%, 46%, 0);
 
-
- 
-    /* font */
     --font: 'Hanken Grotesk', sans-serif;
-
     --borderRadius: 0.75rem;
     --borderRadius-medium: 2rem;
     --borderRadius-large: 5rem;
     --transition: all 0.3s linear;
-
-     --light-shadow: 0 0 15px hsla(241, 100%, 89%, 0.5);
+    --light-shadow: 0 0 15px hsla(241, 100%, 89%, 0.5);
 }
 
 html {font-size: 112.5%;} /*18px*/
 
 
 body {
-  background: var(--white);
-  font-family: var(--font), sans-serif;
-  font-weight: 500;
-  line-height: 1.75;
-  color: var(--lightlavender-1);
+    background: var(--white);
+    font-family: var(--font), sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    color: var(--lightlavender-6);
 }
 
 
-p {margin-bottom: 1rem;}
+p {
+    margin-bottom: 1rem;
+}
 
 h1, h2, h3, h4, h5 {
-  margin: 3rem 0 1.38rem;
-  font-family: var(--font), sans-serif;
-  font-weight: 500;
-  line-height: 1.3;
+    margin: 3rem 0 1.38rem;
+    font-family: var(--font), sans-serif;
+    font-weight: 500;
+    line-height: 1.3;
 }
 
 h1 {
-  margin-top: 0;
-  font-size: 3.052rem;
+    margin-top: 0;
+    font-size: 3.052rem;
 }
 
-h2 {font-size: 2.441rem;}
+h2 {
+    font-size: 2.441rem;
+}
 
-h3 {font-size: 1.953rem;}
+h3 {
+    font-size: 1.953rem;
+}
 
-h4 {font-size: 1.563rem;}
+h4 {
+    font-size: 1.563rem;
+}
 
-h5 {font-size: 1.25rem;}
+h5 {
+    font-size: 1.25rem;
+}
 
-small, .text-small {font-size: 0.8rem;}
-
-
-
-
+small, .text-small {
+    font-size: 0.8rem;
+}
 
 .attribution {
     font-size: 11px;
@@ -103,7 +104,6 @@ small, .text-small {font-size: 0.8rem;}
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
-
 
 /* 
 ==============
@@ -116,7 +116,6 @@ Card
     display: grid;
     align-content: center;
     justify-content: center;
-    /* margin-top: 5rem; */
 }   
 
 .result-card {
@@ -124,10 +123,8 @@ Card
     text-align: center;
     width: 375px;
     max-width: 90vw;
-    /* position: relative; */
     border-bottom-left-radius: var(--borderRadius-medium);
     border-bottom-right-radius: var(--borderRadius-medium);
-    
 }
 
 .result-card p {
@@ -136,70 +133,49 @@ Card
     color: var(--lightlavender);
 }
 
-
 .score-container {
-    /* position: absolute; */
-    /* top:50%; */
-    /* left:50%; */
-    /* transform: translate(-50%, -50%); */
-    /* ****** */
     background: linear-gradient(var(--violetblue), var(--violetblue-1));
     width: 10rem;
     height: 10rem;
     margin: 0 auto;
-    /* ******** */
-    /* display: grid; */
-    /* place-items: center; */
-    /* *** */
     border-radius: 50%;
     display: flex;
     flex-direction: column; 
-    /* *** */
-    
-    /* justify-content: flex-end; */
-    /* background: red; */
-
     border-radius: 50%;
 }
 
 .score-text {
- margin-top: 3rem;
+    margin-top: 3rem;
+}
+
+.score-text h2 {
+    font-weight: 800;
+    color: var(--white);
+    font-size: 3.25rem;
+    padding-bottom: 2rem;
+    margin-top: -1rem;
 }
 
 .score-text p {
     margin-top: -3.5rem;
 }
+
 .score-footer {
     margin-top: -2rem;
 }
+
 .score-footer h4 {
     color: var(--white);
     font-weight: 500;
 }
+
 .score-footer p {
     padding: 4rem;
     padding-bottom: 1rem;
     margin-top: -5rem;
     font-size: 0.9rem;
-    color: var(--paleblue-1);
+    color: var(--paleblue-7);
     line-height: 1.5;
-}
-.result-card h2 {
-    font-weight: 800;
-    color: var(--white);
-    /* background: red; */
-    font-size: 3.25rem;
-}
-
-
-.score-container h2 {
-    /* background: purple; */
-    padding-bottom: 2rem;
-    margin-top: -1rem;
-}
-.of-100 {
-    /* background: yellow; */
-    /* margin-top: -2.5rem; */
 }
 
 
@@ -210,6 +186,7 @@ Card
     padding-left: 0.75rem;
     padding-right: 0.75rem;
 }
+
 .summary-card p {
     color: var(--darkgreyblue);
     font-weight: 700;
@@ -217,6 +194,7 @@ Card
     font-size: 1.25rem;
 
 }
+
 .summary-list {
     width: 98%;
     margin: 0 auto;
@@ -225,42 +203,37 @@ Card
 .summary-item {
     display: flex;
     justify-content: space-between;
-     background: var(--lightred-1);
-     padding: 0.75rem 1rem;
-     margin-bottom: 1rem;
-     border-radius: var(--borderRadius);
-     outline-style: solid;
-     outline-color: transparent;
+    background: var(--lightred-1);
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: var(--borderRadius);
+    outline-style: solid;
+    outline-color: transparent;
 }
 
 .summary-item-details {
     display: flex;
     align-items: center;
-    
 }
 
 .summary-item-name {
-
     text-transform: capitalize;
     padding-left: 0.75rem;
 }
 
 .reaction {
-
     color: var(--lightred);
     background: var(--lightred-1);
 }
 
 .memory {
-
     color: var(--orangeyellow);
     background: var(--orangeyellow-1);
 }
 
 .verbal {
     color: var(--greenteal);
-    background: var(--greenteal-1);
-    
+    background: var(--greenteal-1);    
 }
 
 .visual {
@@ -274,7 +247,7 @@ Card
 }
 
 .out-of-hundred {
-    color: var(--darkgreyblue-1);
+    color: var(--darkgreyblue-3);
     font-weight: 800;
 }
 
@@ -292,7 +265,7 @@ Card
 .btn:hover {
     background: var(--cobaltblue);
     cursor: pointer;
-  }
+}
 
 
 .btn:focus {
@@ -307,7 +280,7 @@ Media Queries
 */
 
 @media screen and (min-width: 1000px) {
-
+    
     .card-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -317,7 +290,6 @@ Media Queries
     .result-card {
         height: 500px;
         width: 375px;
-        /* padding: 2rem; */
         display: grid;
         justify-self: end;
         border-radius: var(--borderRadius-medium);
@@ -325,8 +297,7 @@ Media Queries
     }
 
     .summary-card {
-       
-         width: 400px;
+        width: 400px;
         margin-left: -3rem;
         padding-left: 5rem;
         padding-right: 2rem;
