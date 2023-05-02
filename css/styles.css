@@ -99,6 +99,8 @@ small, .text-small {
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .attribution a {
@@ -280,7 +282,7 @@ Media Queries
 */
 
 @media screen and (min-width: 1000px) {
-    
+
     .card-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -305,4 +307,8 @@ Media Queries
         border-top-right-radius: var(--borderRadius-medium);
         border-bottom-right-radius: var(--borderRadius-medium);
     }
+
+.attribution {
+    margin-top: -5rem;
+}
 }
