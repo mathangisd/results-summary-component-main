@@ -259,8 +259,7 @@ Card
     color: var(--white);
     border-radius: var(--borderRadius-large);
     font-size: 1rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin: 0.75rem 0.5rem 0.5rem 0.5rem;
     transition: var(--transition);
 }
 
@@ -307,8 +306,4 @@ Media Queries
         border-top-right-radius: var(--borderRadius-medium);
         border-bottom-right-radius: var(--borderRadius-medium);
     }
-
-.attribution {
-    margin-top: -5rem;
-}
 }
