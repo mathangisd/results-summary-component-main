@@ -130,7 +130,7 @@ Card
 }
 
 .result-card p {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     font-size: 1.25rem;
     color: var(--lightlavender);
 }
@@ -159,7 +159,7 @@ Card
 }
 
 .score-text p {
-    margin-top: -3.5rem;
+    margin-top:-3.5rem;
 }
 
 .score-footer {
@@ -172,7 +172,7 @@ Card
 }
 
 .score-footer p {
-    padding: 4rem;
+    padding: 3.5rem;
     padding-bottom: 1rem;
     margin-top: -5rem;
     font-size: 0.9rem;
@@ -192,7 +192,7 @@ Card
 .summary-card p {
     color: var(--darkgreyblue);
     font-weight: 700;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     font-size: 1.25rem;
 
 }
@@ -206,7 +206,7 @@ Card
     display: flex;
     justify-content: space-between;
     background: var(--lightred-1);
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 1rem;
     margin-bottom: 1rem;
     border-radius: var(--borderRadius);
     outline-style: solid;
