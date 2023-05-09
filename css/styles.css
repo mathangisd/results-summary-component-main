@@ -169,12 +169,13 @@ Card
 .score-footer h4 {
     color: var(--white);
     font-weight: 500;
+  
 }
 
 .score-footer p {
     padding: 3.5rem;
     padding-bottom: 1rem;
-    margin-top: -5rem;
+    margin-top: -4.25rem;
     font-size: 0.9rem;
     color: var(--paleblue-7);
     line-height: 1.5;
@@ -259,7 +260,7 @@ Card
     color: var(--white);
     border-radius: var(--borderRadius-large);
     font-size: 1rem;
-    margin: 0.75rem 0.5rem 0.5rem 0.5rem;
+    margin: 0.5rem 0.5rem 0.65rem 0.5rem;
     transition: var(--transition);
 }
 
