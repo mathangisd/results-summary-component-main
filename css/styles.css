@@ -256,6 +256,7 @@ Card
 
 .btn {
     background: var(--darkgreyblue);
+    border: none;
     padding: 1rem;
     color: var(--white);
     border-radius: var(--borderRadius-large);
@@ -265,14 +266,14 @@ Card
 }
 
 .btn:hover {
-    background: var(--cobaltblue);
+    background: linear-gradient( 180deg, var(--lightslateblue) 5%, var(--lightroyalblue));
     cursor: pointer;
 }
 
 
 .btn:focus {
     outline: 2px solid transparent;
-    background: var(--cobaltblue );
+    background: linear-gradient( 180deg, var(--lightslateblue) 5%, var(--lightroyalblue));
 }
 
 /* 
